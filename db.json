@@ -1,0 +1,58 @@
+{
+  "products": [
+    {
+      "id": 1,
+      "title": "Quantum Smartphone X",
+      "price": 899,
+      "category": "Electronics",
+      "description": "Experience the future with quantum computing power, 200MP camera, and 48-hour battery life. The most advanced smartphone ever created.",
+      "image": "https://picsum.photos/400/400?random=1",
+      "rating": 4.8
+    },
+    {
+      "id": 2,
+      "title": "NovaBook Pro",
+      "price": 1499,
+      "category": "Electronics",
+      "description": "Ultra-slim laptop with holographic display, AI-powered processor, and 32GB RAM. Perfect for creators and professionals.",
+      "image": "https://picsum.photos/400/400?random=2",
+      "rating": 4.9
+    },
+    {
+      "id": 3,
+      "title": "CyberSound X1",
+      "price": 299,
+      "category": "Audio",
+      "description": "Wireless headphones with neural audio processing, 3D spatial sound, and 60-hour battery life. Immerse yourself in sound.",
+      "image": "https://picsum.photos/400/400?random=3",
+      "rating": 4.7
+    },
+    {
+      "id": 4,
+      "title": "ChronoWatch",
+      "price": 399,
+      "category": "Wearables",
+      "description": "Smartwatch with health monitoring, GPS, and 7-day battery life. Track your fitness goals in style.",
+      "image": "https://picsum.photos/400/400?random=4",
+      "rating": 4.6
+    },
+    {
+      "id": 5,
+      "title": "Phantom Drone",
+      "price": 799,
+      "category": "Drones",
+      "description": "4K camera drone with 30-minute flight time and obstacle avoidance. Capture stunning aerial footage.",
+      "image": "https://picsum.photos/400/400?random=5",
+      "rating": 4.8
+    },
+    {
+      "id": 6,
+      "title": "Stellar Gaming PC",
+      "price": 2499,
+      "category": "Gaming",
+      "description": "High-performance gaming PC with RTX 5090, 64GB RAM, and liquid cooling. Dominate every game.",
+      "image": "https://picsum.photos/400/400?random=6",
+      "rating": 5.0
+    }
+  ]
+}
