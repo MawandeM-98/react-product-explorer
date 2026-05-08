@@ -14,7 +14,7 @@ function ProductForm({ onSubmit, onCancel, isLoading = false }: ProductFormProps
     price: 0,
     category: '',
     description: '',
-    image: '',
+    image: '/images/img6.jpeg',
     rating: 0,
   });
 
@@ -53,7 +53,7 @@ function ProductForm({ onSubmit, onCancel, isLoading = false }: ProductFormProps
   };
 
   return (
-    <form onSubmit={handleSubmit} className="space-y-6">
+    <form onSubmit={handleSubmit} className="space-y-5 sm:space-y-6">
       <div>
         <label className="label">Product Title</label>
         <input
@@ -67,7 +67,7 @@ function ProductForm({ onSubmit, onCancel, isLoading = false }: ProductFormProps
         {errors.title && <p className="text-pink-500 text-sm mt-1">{errors.title}</p>}
       </div>
 
-      <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+      <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 sm:gap-6">
         <div>
           <label className="label">Price ($)</label>
           <input
@@ -109,7 +109,7 @@ function ProductForm({ onSubmit, onCancel, isLoading = false }: ProductFormProps
         {errors.description && <p className="text-pink-500 text-sm mt-1">{errors.description}</p>}
       </div>
 
-      <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+      <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 sm:gap-6">
         <div>
           <label className="label">Image URL</label>
           <input
@@ -140,7 +140,7 @@ function ProductForm({ onSubmit, onCancel, isLoading = false }: ProductFormProps
         </div>
       </div>
 
-      <div className="flex gap-4 pt-6">
+      <div className="flex flex-col sm:flex-row gap-3 sm:gap-4 pt-4 sm:pt-6">
         <button
           type="submit"
           disabled={isLoading}

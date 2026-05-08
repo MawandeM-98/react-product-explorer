@@ -84,26 +84,26 @@ function ProductList() {
       {/* Glowing dv Logo - Top Left */}
       <div className="fixed top-6 left-6 z-40">
         <div className="text-3xl font-bold text-cyan-400 animate-pulse tracking-wider glow-text">
-          dv
+          dv//
         </div>
       </div>
 
-      <div className="container mx-auto px-4 py-8">
-        {/* Header Section - Aligned Left */}
-        <div className="max-w-4xl mx-auto mb-12">
-          <div className="mb-2">
-            <span className="text-cyan-400 text-sm uppercase tracking-wider font-semibold">deVere</span>
+      <div className="container mx-auto px-4 sm:px-6 py-6 sm:py-8">
+        {/* Header Section - Left Aligned with Products */}
+        <div className="max-w-7xl mx-auto mb-8 sm:mb-12">
+          <div className="mb-1">
+            <span className="text-cyan-400 text-xs sm:text-sm uppercase tracking-wider font-semibold">deVere</span>
           </div>
-          <h1 className="text-5xl md:text-6xl font-bold bg-gradient-to-r from-cyan-400 via-purple-400 to-pink-400 bg-clip-text text-transparent mb-4">
+          <h1 className="text-3xl sm:text-4xl md:text-5xl font-bold bg-gradient-to-r from-cyan-400 via-purple-400 to-pink-400 bg-clip-text text-transparent mb-2 sm:mb-3">
             productExplorer
           </h1>
-          <p className="text-gray-300 text-lg max-w-2xl">
-            Step into the AI-driven 22nd century with deVere futuristic products
+          <p className="text-gray-300 text-sm sm:text-base max-w-2xl">
+            Step into the portal of the 22'nd century with deVere futuristic gadgets. The future is now dv//
           </p>
         </div>
 
-        {/* Search and Add Bar - Full Width, Level */}
-        <div className="flex flex-col sm:flex-row gap-4 mb-12 max-w-4xl mx-auto">
+        {/* Search and Add Bar - Left Aligned */}
+        <div className="flex flex-col sm:flex-row gap-4 mb-8 sm:mb-12 max-w-7xl mx-auto">
           <div className="flex-1">
             <input
               type="text"
@@ -123,7 +123,7 @@ function ProductList() {
 
         {/* Error Message */}
         {error && (
-          <div className="bg-red-500/10 border border-red-500/50 text-red-300 px-4 py-3 rounded-lg mb-6 max-w-4xl mx-auto">
+          <div className="bg-red-500/10 border border-red-500/50 text-red-300 px-4 py-3 rounded-lg mb-6 max-w-7xl mx-auto">
             {error}
             <button
               onClick={fetchProducts}
@@ -134,7 +134,7 @@ function ProductList() {
           </div>
         )}
 
-        {/* Product Grid - 4 columns on large screens */}
+        {/* Product Grid - Responsive */}
         {filteredProducts.length === 0 ? (
           <div className="text-center py-12">
             <p className="text-gray-400 text-lg">No products found</p>
@@ -148,7 +148,7 @@ function ProductList() {
             )}
           </div>
         ) : (
-          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6 max-w-7xl mx-auto">
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-4 sm:gap-5 md:gap-6 max-w-7xl mx-auto">
             {filteredProducts.map((product) => (
               <ProductCard
                 key={product.id}
@@ -160,16 +160,16 @@ function ProductList() {
         )}
       </div>
 
-      {/* Product Form Modal - Larger */}
+      {/* Product Form Modal */}
       {showForm && (
         <div className="modal-overlay" onClick={() => setShowForm(false)}>
           <div className="modal-content" onClick={(e) => e.stopPropagation()}>
-            <div className="p-8 md:p-10">
-              <div className="text-center mb-8">
-                <h2 className="text-3xl md:text-4xl font-bold bg-gradient-to-r from-cyan-400 to-purple-400 bg-clip-text text-transparent">
+            <div className="p-6 sm:p-8 md:p-10">
+              <div className="text-center mb-6 sm:mb-8">
+                <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold bg-gradient-to-r from-cyan-400 to-purple-400 bg-clip-text text-transparent">
                   Add New Product
                 </h2>
-                <div className="w-20 h-1 bg-gradient-to-r from-cyan-500 to-purple-500 mx-auto mt-3 rounded-full"></div>
+                <div className="w-16 sm:w-20 h-1 bg-gradient-to-r from-cyan-500 to-purple-500 mx-auto mt-2 sm:mt-3 rounded-full"></div>
               </div>
               <ProductForm
                 onSubmit={handleAddProduct}

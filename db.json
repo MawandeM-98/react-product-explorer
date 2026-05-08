@@ -1,68 +1,58 @@
 {
   "products": [
     {
-      "id": "1",
+      "id": 1,
       "title": "Quantum Smartphone X",
       "price": 899,
       "category": "Electronics",
-      "description": "Experience the future with quantum computing power, 200MP camera, and 48-hour battery life. The most advanced smartphone ever created.",
-      "image": "/src/images/img0.jpeg",
+      "description": "Powered by quantum AI neural processor. 200MP photon camera with molecular zoom. 72-hour battery life with graphene core. Holographic display projects 3D interfaces into thin air. Biometric DNA authentication.",
+      "image": "/images/img0.jpeg",
       "rating": 4.8
     },
     {
-      "id": "2",
+      "id": 2,
       "title": "NovaBook Pro",
       "price": 1499,
       "category": "Electronics",
-      "description": "Ultra-slim laptop with holographic display, AI-powered processor, and 32GB RAM. Perfect for creators and professionals.",
-      "image": "/src/images/img1.jpeg",
+      "description": "Folding holographic display with 8K resolution. AI co-pilot that learns your workflow. Quantum encryption for military-grade security. 48-hour continuous use. Neural interface ready.",
+      "image": "/images/img1.jpeg",
       "rating": 4.9
     },
     {
-      "id": "3",
+      "id": 3,
       "title": "CyberSound X1",
       "price": 299,
       "category": "Audio",
-      "description": "Wireless headphones with neural audio processing, 3D spatial sound, and 60-hour battery life. Immerse yourself in sound.",
-      "image": "/src/images/img2.jpeg",
+      "description": "Neural audio processing that adapts to your brainwaves. 3D spatial audio with object tracking. 120-hour battery. AI soundscape generation for immersive experiences.",
+      "image": "/images/img2.jpeg",
       "rating": 4.7
     },
     {
-      "id": "4",
+      "id": 4,
       "title": "ChronoWatch",
       "price": 399,
       "category": "Wearables",
-      "description": "Smartwatch with health monitoring, GPS, and 7-day battery life. Track your fitness goals in style.",
-      "image": "/src/images/img3.jpeg",
+      "description": "Quantum chronometer with GPS-free navigation. Whole-body health diagnostics with AI prediction. 30-day battery. Holographic hologram projecting. Emergency quantum teleportation alert.",
+      "image": "/images/img3.jpeg",
       "rating": 4.6
     },
     {
-      "id": "5",
+      "id": 5,
       "title": "Phantom Drone",
       "price": 799,
       "category": "Drones",
-      "description": "4K camera drone with 30-minute flight time and obstacle avoidance. Capture stunning aerial footage.",
-      "image": "/src/images/img4.jpeg",
+      "description": "Invisible stealth mode with active camouflage. 8K quantum imaging. AI autonomous swarm coordination. 60-minute flight. Solar rechargeable skin.",
+      "image": "/images/img4.jpeg",
       "rating": 4.8
     },
     {
-      "id": "6",
+      "id": 6,
       "title": "Stellar Gaming PC",
       "price": 2499,
       "category": "Gaming",
-      "description": "High-performance gaming PC with RTX 5090, 64GB RAM, and liquid cooling. Dominate every game.",
-      "image": "/src/images/img5.jpeg",
-      "rating": 5
-    },
-    {
-      "title": "tv",
-      "price": 20,
-      "category": "Audio",
-      "description": "yuuuuuuur",
-      "image": "images",
-      "rating": 5,
-      "id": "FCvpOUobccc"
+      "description": "Quantum ray tracing with infinite pixel resolution. Neural link controller. AI difficulty adaptation. Liquid nitrogen cooling system. 1 petabyte quantum storage.",
+      "image": "/images/img5.jpeg",
+      "rating": 5.0
     }
-  ],
-  "$schema": "./node_modules/json-server/schema.json"
+  ]
 }
