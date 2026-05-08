@@ -4,16 +4,58 @@
 
 @layer base {
   body {
-    @apply bg-dark-bg text-white;
+    @apply bg-gradient-to-br from-[#0a0a1a] via-[#0f0f23] to-[#0a0a1a] text-white;
+    font-family: 'Inter', system-ui, -apple-system, sans-serif;
   }
 }
 
 @layer components {
-  .btn-primary {
-    @apply bg-neon-blue text-dark-bg font-bold py-2 px-6 rounded-lg transition-all duration-300 hover:shadow-neon hover:scale-105;
+  /* Neon Glow Effects */
+  .glow-text {
+    text-shadow: 0 0 10px #00f3ff, 0 0 20px #00f3ff, 0 0 30px #00f3ff;
   }
   
+  .glow-box {
+    box-shadow: 0 0 10px rgba(0, 243, 255, 0.3), 0 0 20px rgba(0, 243, 255, 0.1);
+  }
+  
+  /* Primary Button - Cyan Neon */
+  .btn-primary {
+    @apply bg-gradient-to-r from-cyan-500 to-blue-600 text-white font-bold py-3 px-8 rounded-lg transition-all duration-300 hover:shadow-[0_0_20px_rgba(0,243,255,0.5)] hover:scale-105;
+  }
+  
+  /* Secondary Button - Purple Neon */
   .btn-secondary {
-    @apply bg-transparent border border-neon-purple text-neon-purple font-bold py-2 px-6 rounded-lg transition-all duration-300 hover:shadow-neon-purple hover:bg-neon-purple/10;
+    @apply bg-transparent border-2 border-purple-500 text-purple-400 font-bold py-3 px-8 rounded-lg transition-all duration-300 hover:shadow-[0_0_20px_rgba(168,85,247,0.5)] hover:bg-purple-500/10;
+  }
+  
+  /* Detail Button - Magenta */
+  .btn-details {
+    @apply bg-gradient-to-r from-pink-600 to-purple-600 text-white font-bold py-2 px-4 rounded-lg transition-all duration-300 hover:shadow-[0_0_15px_rgba(236,72,153,0.5)] hover:scale-105 text-sm;
+  }
+  
+  /* Card - Glass Morphism */
+  .card {
+    @apply bg-white/5 backdrop-blur-sm rounded-xl border border-white/10 overflow-hidden transition-all duration-300 hover:border-cyan-500/50 hover:shadow-[0_0_20px_rgba(0,243,255,0.2)] hover:scale-[1.02];
+  }
+  
+  /* Input Fields */
+  .input {
+    @apply w-full px-4 py-3 bg-white/5 border border-white/10 rounded-lg text-white placeholder-gray-400 focus:outline-none focus:border-cyan-500 focus:ring-1 focus:ring-cyan-500 transition-all duration-300;
+  }
+  
+  /* Labels */
+  .label {
+    @apply block text-sm font-medium text-cyan-400 mb-2 uppercase tracking-wider;
+  }
+  
+  /* Modal Overlay */
+  .modal-overlay {
+    @apply fixed inset-0 bg-black/80 backdrop-blur-sm flex items-center justify-center z-50 p-4;
+  }
+  
+  /* Modal Content - Larger */
+  .modal-content {
+    @apply bg-gradient-to-br from-[#11112a] to-[#0a0a1a] rounded-2xl border border-cyan-500/30 shadow-[0_0_50px_rgba(0,243,255,0.2)] max-w-3xl w-full max-h-[90vh] overflow-y-auto;
   }
 }

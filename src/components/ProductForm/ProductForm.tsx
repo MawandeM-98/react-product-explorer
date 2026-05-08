@@ -47,16 +47,15 @@ function ProductForm({ onSubmit, onCancel, isLoading = false }: ProductFormProps
       ...prev,
       [name]: name === 'price' || name === 'rating' ? parseFloat(value) : value,
     }));
-    // Clear error for this field when user starts typing
     if (errors[name as keyof ProductFormData]) {
       setErrors(prev => ({ ...prev, [name]: undefined }));
     }
   };
 
   return (
-    <form onSubmit={handleSubmit} className="space-y-4">
+    <form onSubmit={handleSubmit} className="space-y-6">
       <div>
-        <label className="label">Title</label>
+        <label className="label">Product Title</label>
         <input
           type="text"
           name="title"
@@ -65,34 +64,36 @@ function ProductForm({ onSubmit, onCancel, isLoading = false }: ProductFormProps
           className="input"
           placeholder="Enter product title"
         />
-        {errors.title && <p className="text-red-500 text-sm mt-1">{errors.title}</p>}
+        {errors.title && <p className="text-pink-500 text-sm mt-1">{errors.title}</p>}
       </div>
 
-      <div>
-        <label className="label">Price ($)</label>
-        <input
-          type="number"
-          name="price"
-          value={formData.price || ''}
-          onChange={handleChange}
-          className="input"
-          placeholder="0.00"
-          step="0.01"
-        />
-        {errors.price && <p className="text-red-500 text-sm mt-1">{errors.price}</p>}
-      </div>
+      <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+        <div>
+          <label className="label">Price ($)</label>
+          <input
+            type="number"
+            name="price"
+            value={formData.price || ''}
+            onChange={handleChange}
+            className="input"
+            placeholder="0.00"
+            step="0.01"
+          />
+          {errors.price && <p className="text-pink-500 text-sm mt-1">{errors.price}</p>}
+        </div>
 
-      <div>
-        <label className="label">Category</label>
-        <input
-          type="text"
-          name="category"
-          value={formData.category}
-          onChange={handleChange}
-          className="input"
-          placeholder="e.g., Electronics, Audio, etc."
-        />
-        {errors.category && <p className="text-red-500 text-sm mt-1">{errors.category}</p>}
+        <div>
+          <label className="label">Category</label>
+          <input
+            type="text"
+            name="category"
+            value={formData.category}
+            onChange={handleChange}
+            className="input"
+            placeholder="e.g., Electronics, Audio"
+          />
+          {errors.category && <p className="text-pink-500 text-sm mt-1">{errors.category}</p>}
+        </div>
       </div>
 
       <div>
@@ -102,53 +103,55 @@ function ProductForm({ onSubmit, onCancel, isLoading = false }: ProductFormProps
           value={formData.description}
           onChange={handleChange}
           className="input"
-          rows={3}
+          rows={4}
           placeholder="Enter product description"
         />
-        {errors.description && <p className="text-red-500 text-sm mt-1">{errors.description}</p>}
+        {errors.description && <p className="text-pink-500 text-sm mt-1">{errors.description}</p>}
       </div>
 
-      <div>
-        <label className="label">Image URL</label>
-        <input
-          type="text"
-          name="image"
-          value={formData.image}
-          onChange={handleChange}
-          className="input"
-          placeholder="https://picsum.photos/200/200?random=1"
-        />
-        {errors.image && <p className="text-red-500 text-sm mt-1">{errors.image}</p>}
+      <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+        <div>
+          <label className="label">Image URL</label>
+          <input
+            type="text"
+            name="image"
+            value={formData.image}
+            onChange={handleChange}
+            className="input"
+            placeholder="/images/product.jpeg"
+          />
+          {errors.image && <p className="text-pink-500 text-sm mt-1">{errors.image}</p>}
+        </div>
+
+        <div>
+          <label className="label">Rating (0-5)</label>
+          <input
+            type="number"
+            name="rating"
+            value={formData.rating || ''}
+            onChange={handleChange}
+            className="input"
+            placeholder="4.5"
+            step="0.1"
+            min="0"
+            max="5"
+          />
+          {errors.rating && <p className="text-pink-500 text-sm mt-1">{errors.rating}</p>}
+        </div>
       </div>
 
-      <div>
-        <label className="label">Rating (0-5)</label>
-        <input
-          type="number"
-          name="rating"
-          value={formData.rating || ''}
-          onChange={handleChange}
-          className="input"
-          placeholder="4.5"
-          step="0.1"
-          min="0"
-          max="5"
-        />
-        {errors.rating && <p className="text-red-500 text-sm mt-1">{errors.rating}</p>}
-      </div>
-
-      <div className="flex gap-3 pt-4">
+      <div className="flex gap-4 pt-6">
         <button
           type="submit"
           disabled={isLoading}
-          className="btn-primary disabled:opacity-50 disabled:cursor-not-allowed"
+          className="btn-primary flex-1 disabled:opacity-50 disabled:cursor-not-allowed"
         >
           {isLoading ? 'Adding...' : 'Add Product'}
         </button>
         <button
           type="button"
           onClick={onCancel}
-          className="btn-secondary"
+          className="btn-secondary flex-1"
         >
           Cancel
         </button>
