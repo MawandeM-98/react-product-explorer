@@ -6,7 +6,7 @@
       "price": 899,
       "category": "Electronics",
       "description": "Powered by quantum AI neural processor. 200MP photon camera with molecular zoom. 72-hour battery life with graphene core. Holographic display projects 3D interfaces into thin air. Biometric DNA authentication.",
-      "image": "/images/img0.jpeg",
+      "image": "/src/images/img0.jpeg",
       "rating": 4.8
     },
     {
@@ -15,7 +15,7 @@
       "price": 1499,
       "category": "Electronics",
       "description": "Folding holographic display with 8K resolution. AI co-pilot that learns your workflow. Quantum encryption for military-grade security. 48-hour continuous use. Neural interface ready.",
-      "image": "/images/img1.jpeg",
+      "image": "/src/images/img1.jpeg",
       "rating": 4.9
     },
     {
@@ -24,7 +24,7 @@
       "price": 299,
       "category": "Audio",
       "description": "Neural audio processing that adapts to your brainwaves. 3D spatial audio with object tracking. 120-hour battery. AI soundscape generation for immersive experiences.",
-      "image": "/images/img2.jpeg",
+      "image": "/src/images/img2.jpeg",
       "rating": 4.7
     },
     {
@@ -33,7 +33,7 @@
       "price": 399,
       "category": "Wearables",
       "description": "Quantum chronometer with GPS-free navigation. Whole-body health diagnostics with AI prediction. 30-day battery. Holographic hologram projecting. Emergency quantum teleportation alert.",
-      "image": "/images/img3.jpeg",
+      "image": "/src/images/img3.jpeg",
       "rating": 4.6
     },
     {
@@ -42,7 +42,7 @@
       "price": 799,
       "category": "Drones",
       "description": "Invisible stealth mode with active camouflage. 8K quantum imaging. AI autonomous swarm coordination. 60-minute flight. Solar rechargeable skin.",
-      "image": "/images/img4.jpeg",
+      "image": "/src/images/img4.jpeg",
       "rating": 4.8
     },
     {
@@ -51,7 +51,7 @@
       "price": 2499,
       "category": "Gaming",
       "description": "Quantum ray tracing with infinite pixel resolution. Neural link controller. AI difficulty adaptation. Liquid nitrogen cooling system. 1 petabyte quantum storage.",
-      "image": "/images/img5.jpeg",
+      "image": "/src/images/img5.jpeg",
       "rating": 5.0
     }
   ]
