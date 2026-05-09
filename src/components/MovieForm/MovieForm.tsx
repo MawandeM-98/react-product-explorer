@@ -76,7 +76,7 @@ function MovieForm({ onSubmit, onCancel, isLoading = false }: MovieFormProps) {
             value={formData.year}
             onChange={handleChange}
             className="input"
-            placeholder="1995 or 2008-2013"
+            placeholder="Enter year of release"
           />
           {errors.year && <p className="text-pink-500 text-sm mt-1">{errors.year}</p>}
         </div>

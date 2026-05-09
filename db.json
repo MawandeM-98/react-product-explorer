@@ -1,7 +1,7 @@
 {
   "movies": [
     {
-      "id": 1,
+      "id": "1",
       "title": "Heat",
       "year": 1995,
       "category": "Crime / Thriller",
@@ -10,7 +10,7 @@
       "rating": 4.9
     },
     {
-      "id": 2,
+      "id": "2",
       "title": "Scarface",
       "year": 1983,
       "category": "Crime / Drama",
@@ -19,16 +19,16 @@
       "rating": 4.8
     },
     {
-      "id": 3,
+      "id": "3",
       "title": "The Godfather",
       "year": 1972,
       "category": "Crime / Drama",
       "description": "The aging patriarch of a powerful crime family transfers control to his reluctant youngest son, who gradually transforms into the very thing he swore he'd never become.",
       "image": "/src/images/img2.jpeg",
-      "rating": 5.0
+      "rating": 5
     },
     {
-      "id": 4,
+      "id": "4",
       "title": "Reservoir Dogs",
       "year": 1992,
       "category": "Crime / Thriller",
@@ -37,7 +37,7 @@
       "rating": 4.7
     },
     {
-      "id": 5,
+      "id": "5",
       "title": "The Wire",
       "year": "2002-2008",
       "category": "TV Series / Crime",
@@ -46,16 +46,16 @@
       "rating": 4.9
     },
     {
-      "id": 6,
+      "id": "6",
       "title": "Breaking Bad",
       "year": "2008-2013",
       "category": "TV Series / Drama",
       "description": "A mild-mannered high school chemistry teacher, diagnosed with terminal cancer, teams up with a former student to cook methamphetamine — and discovers he's terrifyingly good at being bad.",
       "image": "/src/images/img5.jpeg",
-      "rating": 5.0
+      "rating": 5
     },
     {
-      "id": 7,
+      "id": "7",
       "title": "The Sopranos",
       "year": "1999-2007",
       "category": "TV Series / Drama",
