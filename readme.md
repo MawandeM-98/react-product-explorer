@@ -25,27 +25,36 @@ For notes on AI usage, tradeoffs and assumptions check Wiki page on Github for r
 
 1. **Clone the repository**
    Open your terminal and run:
+   
 git clone https://github.com/MawandeM-98/react-product-explorer.git
 
 text
 
 2. **Go into the project folder**
+
 cd react-product-explorer
 
 text
 
 3. **Install dependencies**
+
 This downloads all the required packages.
+
 npm install
 
 text
 
 4. **Start the fake database (JSON Server)**
+
 Open a terminal and run:
+
 npm run server
 
-text
 You should see a message saying `JSON Server started on PORT :3000`
+
+You will see:
+
+http://localhost:3000/movies
 
 5. **Start the app (React)**
 Open a **second terminal** and run:
