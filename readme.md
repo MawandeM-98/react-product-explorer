@@ -9,7 +9,8 @@ You can browse through titles, search for your favourites, add new movies or sho
 ## 🔗 Links
 
 - **GitHub Repository:** [https://github.com/MawandeM-98/react-product-explorer](https://github.com/MawandeM-98/react-product-explorer)
-- **Live App:** (Add your Vercel URL here once deployed)
+- 
+For notes on AI usage, tradeoffs and assumptions check Wiki page on Github for react-product-explorer !
 
 ---
 
@@ -71,13 +72,13 @@ The app uses a fake database (`db.json`) so any movies you add will appear immed
 
 ---
 
-## 🤖 AI Usage Disclosure
+🤖 AI Usage Disclosure
 
-I used **Claude (Anthropic)** to help generate the initial code structure, components, and styling. All AI-generated code was reviewed, tested, and adjusted by me to make sure it works properly and matches the design I wanted.
+I used Claude (Anthropic) to help generate the initial code structure, components, and styling. All AI-generated code was reviewed, tested, and adjusted by me to make sure it works properly and matches the design I wanted.
 
 ---
 
-## 📝 Notes for Ivan , Antonio and/or any other deVere Testers:
+📝 Notes for Ivan , Antonio and/or any other deVere Testers:
 
 - The images for movies are stored in the `public/images/` folder. If an image doesn't load, check that the file exists in that folder.
 - When you add a new movie, the default image is `img7.jpeg`. You can change the image URL to any valid path.
