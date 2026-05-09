@@ -1,32 +1,32 @@
-import type { Product, ProductFormData } from '../types/product';
+import type { Movie, MovieFormData } from '../types/movie';
 
 const API_BASE_URL = 'http://localhost:3000';
 
 export const api = {
-  // Get all products (READ)
-  async getProducts(): Promise<Product[]> {
-    const response = await fetch(`${API_BASE_URL}/products`);
-    if (!response.ok) throw new Error('Failed to fetch products');
+  // Get all movies/shows
+  async getMovies(): Promise<Movie[]> {
+    const response = await fetch(`${API_BASE_URL}/movies`);
+    if (!response.ok) throw new Error('Failed to fetch movies');
     return response.json();
   },
 
-  // Get single product by ID (READ ONE)
-  async getProduct(id: number): Promise<Product> {
-    const response = await fetch(`${API_BASE_URL}/products/${id}`);
-    if (!response.ok) throw new Error('Failed to fetch product');
+  // Get single movie by ID
+  async getMovie(id: number): Promise<Movie> {
+    const response = await fetch(`${API_BASE_URL}/movies/${id}`);
+    if (!response.ok) throw new Error('Failed to fetch movie');
     return response.json();
   },
 
-  // Create new product (CREATE)
-  async createProduct(product: ProductFormData): Promise<Product> {
-    const response = await fetch(`${API_BASE_URL}/products`, {
+  // Create new movie/TV show
+  async createMovie(movie: MovieFormData): Promise<Movie> {
+    const response = await fetch(`${API_BASE_URL}/movies`, {
       method: 'POST',
       headers: {
         'Content-Type': 'application/json',
       },
-      body: JSON.stringify(product),
+      body: JSON.stringify(movie),
     });
-    if (!response.ok) throw new Error('Failed to create product');
+    if (!response.ok) throw new Error('Failed to create movie');
     return response.json();
   },
 };

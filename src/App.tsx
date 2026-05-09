@@ -1,13 +1,13 @@
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
-import ProductList from './pages/ProductList/ProductList';
-import ProductDetail from './pages/ProductDetail/ProductDetail';
+import MovieList from './pages/MovieList/MovieList';
+import MovieDetail from './pages/MovieDetail/MovieDetail';
 
 function App() {
   return (
     <BrowserRouter>
       <Routes>
-        <Route path="/" element={<ProductList />} />
-        <Route path="/product/:id" element={<ProductDetail />} />
+        <Route path="/" element={<MovieList />} />
+        <Route path="/movie/:id" element={<MovieDetail />} />
       </Routes>
     </BrowserRouter>
   );

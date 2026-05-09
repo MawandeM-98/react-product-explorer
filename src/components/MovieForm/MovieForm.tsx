@@ -1,30 +1,30 @@
 import { useState } from 'react';
 import type { FormEvent } from 'react';
-import type { ProductFormData } from '../../types/product';
+import type { MovieFormData } from '../../types/movie';
 
-interface ProductFormProps {
-  onSubmit: (product: ProductFormData) => void;
+interface MovieFormProps {
+  onSubmit: (movie: MovieFormData) => void;
   onCancel: () => void;
   isLoading?: boolean;
 }
 
-function ProductForm({ onSubmit, onCancel, isLoading = false }: ProductFormProps) {
-  const [formData, setFormData] = useState<ProductFormData>({
+function MovieForm({ onSubmit, onCancel, isLoading = false }: MovieFormProps) {
+  const [formData, setFormData] = useState<MovieFormData>({
     title: '',
-    price: 0,
+    year: '',
     category: '',
     description: '',
-    image: '/images/img6.jpeg',
+    image: '/src/images/img7.jpeg',
     rating: 0,
   });
 
-  const [errors, setErrors] = useState<Partial<Record<keyof ProductFormData, string>>>({});
+  const [errors, setErrors] = useState<Partial<Record<keyof MovieFormData, string>>>({});
 
   const validateForm = (): boolean => {
-    const newErrors: Partial<Record<keyof ProductFormData, string>> = {};
+    const newErrors: Partial<Record<keyof MovieFormData, string>> = {};
     
     if (!formData.title.trim()) newErrors.title = 'Title is required';
-    if (formData.price <= 0) newErrors.price = 'Price must be greater than 0';
+    if (!formData.year.toString().trim()) newErrors.year = 'Year is required';
     if (!formData.category.trim()) newErrors.category = 'Category is required';
     if (!formData.description.trim()) newErrors.description = 'Description is required';
     if (!formData.image.trim()) newErrors.image = 'Image URL is required';
@@ -45,9 +45,9 @@ function ProductForm({ onSubmit, onCancel, isLoading = false }: ProductFormProps
     const { name, value } = e.target;
     setFormData(prev => ({
       ...prev,
-      [name]: name === 'price' || name === 'rating' ? parseFloat(value) : value,
+      [name]: name === 'rating' ? parseFloat(value) : value,
     }));
-    if (errors[name as keyof ProductFormData]) {
+    if (errors[name as keyof MovieFormData]) {
       setErrors(prev => ({ ...prev, [name]: undefined }));
     }
   };
@@ -55,31 +55,30 @@ function ProductForm({ onSubmit, onCancel, isLoading = false }: ProductFormProps
   return (
     <form onSubmit={handleSubmit} className="space-y-5 sm:space-y-6">
       <div>
-        <label className="label">Product Title</label>
+        <label className="label">Title</label>
         <input
           type="text"
           name="title"
           value={formData.title}
           onChange={handleChange}
           className="input"
-          placeholder="Enter product title"
+          placeholder="Enter movie/TV show title"
         />
         {errors.title && <p className="text-pink-500 text-sm mt-1">{errors.title}</p>}
       </div>
 
       <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 sm:gap-6">
         <div>
-          <label className="label">Price ($)</label>
+          <label className="label">Year</label>
           <input
-            type="number"
-            name="price"
-            value={formData.price || ''}
+            type="text"
+            name="year"
+            value={formData.year}
             onChange={handleChange}
             className="input"
-            placeholder="0.00"
-            step="0.01"
+            placeholder="1995 or 2008-2013"
           />
-          {errors.price && <p className="text-pink-500 text-sm mt-1">{errors.price}</p>}
+          {errors.year && <p className="text-pink-500 text-sm mt-1">{errors.year}</p>}
         </div>
 
         <div>
@@ -90,7 +89,7 @@ function ProductForm({ onSubmit, onCancel, isLoading = false }: ProductFormProps
             value={formData.category}
             onChange={handleChange}
             className="input"
-            placeholder="e.g., Electronics, Audio"
+            placeholder="Crime / Drama, TV Series, etc."
           />
           {errors.category && <p className="text-pink-500 text-sm mt-1">{errors.category}</p>}
         </div>
@@ -104,7 +103,7 @@ function ProductForm({ onSubmit, onCancel, isLoading = false }: ProductFormProps
           onChange={handleChange}
           className="input"
           rows={4}
-          placeholder="Enter product description"
+          placeholder="Enter movie/TV show description"
         />
         {errors.description && <p className="text-pink-500 text-sm mt-1">{errors.description}</p>}
       </div>
@@ -118,7 +117,7 @@ function ProductForm({ onSubmit, onCancel, isLoading = false }: ProductFormProps
             value={formData.image}
             onChange={handleChange}
             className="input"
-            placeholder="/images/product.jpeg"
+            placeholder="/src/images/your-image.jpeg"
           />
           {errors.image && <p className="text-pink-500 text-sm mt-1">{errors.image}</p>}
         </div>
@@ -131,7 +130,7 @@ function ProductForm({ onSubmit, onCancel, isLoading = false }: ProductFormProps
             value={formData.rating || ''}
             onChange={handleChange}
             className="input"
-            placeholder="4.5"
+            placeholder="4.8"
             step="0.1"
             min="0"
             max="5"
@@ -146,7 +145,7 @@ function ProductForm({ onSubmit, onCancel, isLoading = false }: ProductFormProps
           disabled={isLoading}
           className="btn-primary flex-1 disabled:opacity-50 disabled:cursor-not-allowed"
         >
-          {isLoading ? 'Adding...' : 'Add Product'}
+          {isLoading ? 'Adding...' : 'Add Title'}
         </button>
         <button
           type="button"
@@ -160,4 +159,4 @@ function ProductForm({ onSubmit, onCancel, isLoading = false }: ProductFormProps
   );
 }
 
-export default ProductForm;
+export default MovieForm;

@@ -1,58 +1,67 @@
 {
-  "products": [
+  "movies": [
     {
       "id": 1,
-      "title": "Quantum Smartphone X",
-      "price": 899,
-      "category": "Electronics",
-      "description": "Powered by quantum AI neural processor. 200MP photon camera with molecular zoom. 72-hour battery life with graphene core. Holographic display projects 3D interfaces into thin air. Biometric DNA authentication.",
+      "title": "Heat",
+      "year": 1995,
+      "category": "Crime / Thriller",
+      "description": "A master thief and the obsessive LAPD detective hunting him find themselves locked in a tense cat-and-mouse game across Los Angeles, culminating in one of cinema's greatest confrontations.",
       "image": "/src/images/img0.jpeg",
-      "rating": 4.8
-    },
-    {
-      "id": 2,
-      "title": "NovaBook Pro",
-      "price": 1499,
-      "category": "Electronics",
-      "description": "Folding holographic display with 8K resolution. AI co-pilot that learns your workflow. Quantum encryption for military-grade security. 48-hour continuous use. Neural interface ready.",
-      "image": "/src/images/img1.jpeg",
       "rating": 4.9
     },
     {
-      "id": 3,
-      "title": "CyberSound X1",
-      "price": 299,
-      "category": "Audio",
-      "description": "Neural audio processing that adapts to your brainwaves. 3D spatial audio with object tracking. 120-hour battery. AI soundscape generation for immersive experiences.",
-      "image": "/src/images/img2.jpeg",
-      "rating": 4.7
-    },
-    {
-      "id": 4,
-      "title": "ChronoWatch",
-      "price": 399,
-      "category": "Wearables",
-      "description": "Quantum chronometer with GPS-free navigation. Whole-body health diagnostics with AI prediction. 30-day battery. Holographic hologram projecting. Emergency quantum teleportation alert.",
-      "image": "/src/images/img3.jpeg",
-      "rating": 4.6
-    },
-    {
-      "id": 5,
-      "title": "Phantom Drone",
-      "price": 799,
-      "category": "Drones",
-      "description": "Invisible stealth mode with active camouflage. 8K quantum imaging. AI autonomous swarm coordination. 60-minute flight. Solar rechargeable skin.",
-      "image": "/src/images/img4.jpeg",
+      "id": 2,
+      "title": "Scarface",
+      "year": 1983,
+      "category": "Crime / Drama",
+      "description": "A Cuban refugee claws his way to the top of Miami's cocaine empire, only for his paranoia, ego, and excess to consume everything he built.",
+      "image": "/src/images/img1.jpeg",
       "rating": 4.8
     },
     {
+      "id": 3,
+      "title": "The Godfather",
+      "year": 1972,
+      "category": "Crime / Drama",
+      "description": "The aging patriarch of a powerful crime family transfers control to his reluctant youngest son, who gradually transforms into the very thing he swore he'd never become.",
+      "image": "/src/images/img2.jpeg",
+      "rating": 5.0
+    },
+    {
+      "id": 4,
+      "title": "Reservoir Dogs",
+      "year": 1992,
+      "category": "Crime / Thriller",
+      "description": "After a diamond heist goes catastrophically wrong, the surviving criminals hole up in a warehouse trading accusations, with the truth of who betrayed them slowly unraveling in non-linear fashion.",
+      "image": "/src/images/img3.jpeg",
+      "rating": 4.7
+    },
+    {
+      "id": 5,
+      "title": "The Wire",
+      "year": "2002-2008",
+      "category": "TV Series / Crime",
+      "description": "A Baltimore drug investigation told from both sides of the law with equal depth and empathy, exposing how broken institutions grind individuals down regardless of which side they're on.",
+      "image": "/src/images/img4.jpeg",
+      "rating": 4.9
+    },
+    {
       "id": 6,
-      "title": "Stellar Gaming PC",
-      "price": 2499,
-      "category": "Gaming",
-      "description": "Quantum ray tracing with infinite pixel resolution. Neural link controller. AI difficulty adaptation. Liquid nitrogen cooling system. 1 petabyte quantum storage.",
+      "title": "Breaking Bad",
+      "year": "2008-2013",
+      "category": "TV Series / Drama",
+      "description": "A mild-mannered high school chemistry teacher, diagnosed with terminal cancer, teams up with a former student to cook methamphetamine — and discovers he's terrifyingly good at being bad.",
       "image": "/src/images/img5.jpeg",
       "rating": 5.0
+    },
+    {
+      "id": 7,
+      "title": "The Sopranos",
+      "year": "1999-2007",
+      "category": "TV Series / Drama",
+      "description": "New Jersey mob boss Tony Soprano juggles the brutal demands of organized crime with the mundane dysfunction of suburban family life, all while seeing a therapist about his panic attacks.",
+      "image": "/src/images/img6.jpeg",
+      "rating": 4.9
     }
   ]
 }

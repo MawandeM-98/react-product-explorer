@@ -1,16 +1,16 @@
-export interface Product {
+export interface Movie {
   id: number;
   title: string;
-  price: number;
+  year: string | number;
   category: string;
   description: string;
   image: string;
   rating: number;
 }
 
-export interface ProductFormData {
+export interface MovieFormData {
   title: string;
-  price: number;
+  year: string | number;
   category: string;
   description: string;
   image: string;
