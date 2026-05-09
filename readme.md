@@ -10,7 +10,7 @@ You can browse through titles, search for your favourites, add new movies or sho
 
 - **GitHub Repository:** [https://github.com/MawandeM-98/react-product-explorer](https://github.com/MawandeM-98/react-product-explorer)
 - 
-For notes on AI usage, tradeoffs and assumptions check Wiki page on Github for react-product-explorer !
+For notes on AI usage, tradeoffs and assumptions check Wiki page on Github for react-product-explorer !(below home page)
 
 ---
 
@@ -49,9 +49,10 @@ You should see a message saying `JSON Server started on PORT :3000`
 
 5. **Start the app (React)**
 Open a **second terminal** and run:
-npm run dev
 
-text
+**npm run dev**
+
+
 You should see `Local: http://localhost:5173/`
 
 6. **Open your browser**
@@ -84,5 +85,7 @@ I used Claude (Anthropic) to help generate the initial code structure, component
 - When you add a new movie, the default image is `img7.jpeg`. You can change the image URL to any valid path.
 - The app works best on a desktop screen, but it's also responsive on tablets and phones.
 - If something looks broken, try refreshing the page or restarting both servers (`Ctrl+C` in each terminal, then `npm run server` and `npm run dev` again).
+
+
 
 Enjoy exploring the cinema universe! 🍿
