@@ -39,42 +39,44 @@ Browse titles, search for your favourites, add new movies or shows, and view det
 
 ### Step-by-Step Instructions
 
-**1. Clone the repository**
-
-```bash
+1. **Clone the repository**
+   Open your terminal and run:
+   
 git clone https://github.com/MawandeM-98/react-product-explorer.git
 ```
 
 **2. Go into the project folder**
 
-```bash
+2. **Go into the project folder**
+
 cd react-product-explorer
 ```
 
 **3. Install dependencies**
 
+3. **Install dependencies**
+
 This downloads all the required packages.
 
-```bash
 npm install
 ```
 
 **4. Start the fake database (JSON Server)**
 
+4. **Start the fake database (JSON Server)**
+
 Open a terminal and run:
 
-```bash
 npm run server
 ```
 
-You should see a message saying:
+You should see a message saying `JSON Server started on PORT :3000`
 
-```
-JSON Server started on PORT :3000
-```
+You will see:
 
-**5. Start the app (React)**
+http://localhost:3000/movies
 
+5. **Start the app (React)**
 Open a **second terminal** and run:
 
 ```bash
