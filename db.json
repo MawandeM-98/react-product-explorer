@@ -62,6 +62,16 @@
       "description": "New Jersey mob boss Tony Soprano juggles the brutal demands of organized crime with the mundane dysfunction of suburban family life, all while seeing a therapist about his panic attacks.",
       "image": "/src/images/img6.jpeg",
       "rating": 4.9
+    },
+    {
+      "title": "Gayboy",
+      "year": "1999",
+      "category": "Kingswood",
+      "description": "d9ahsd9ugdsu9ghdu9",
+      "image": "/src/images/img7.jpeg",
+      "rating": 4.9,
+      "id": "tDkVLBlcc0g"
     }
-  ]
+  ],
+  "$schema": "./node_modules/json-server/schema.json"
 }
